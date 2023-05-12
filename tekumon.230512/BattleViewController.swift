@@ -29,12 +29,12 @@ class BattleViewController: UIViewController {
         enemyHPBar.transform = CGAffineTransform(scaleX: 1.0, y: 4.0)
         
         player = Player(name: "勇者", imageName: "yusya.png", attackPoint: 20, maxHP: 100)
-        enemy = Enemy(name: "ドラゴン", imageName: "manster.png", attackPoint: 10, maxHP: 300)
+        enemy = Enemy(name: "ドラゴン", imageName: "monster.png", attackPoint: 10, maxHP: 300)
         
         playerNameLabel.text = player.name
-        playerImageView.image = enemy.image
+        playerImageView.image = player.image
         
-        enemyNameLabel.text = player.name
+        enemyNameLabel.text = enemy.name
         enemyImageView.image = enemy.image
         
         updateUI()
